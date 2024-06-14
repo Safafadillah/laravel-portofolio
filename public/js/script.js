@@ -1,10 +1,9 @@
-const header = document.querySelector("header");
-
-window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky",window.scrollY > 120)
+const header = document .querySelector("header");
+window.addEventListener("scroll", function() {
+   header.classList.toggle("sticky", window.scrollY > 120);
 });
 
-let menu = document.querySelector('menu-icon');
+let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
 menu.onclick = () => {
@@ -12,7 +11,7 @@ menu.onclick = () => {
    navlist.classList.toggle('active');
 };
 
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
    menu.classList.remove('bx-x');
    navlist.classList.remove('active');
-}
+});
